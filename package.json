@@ -13,5 +13,8 @@
     "chai-as-promised": "^7.1.1",
     "mocha": "^4.0.0",
     "sinon": "^4.0.0"
+  },
+  "dependencies": {
+    "mongodb": "^2.2.31"
   }
 }
