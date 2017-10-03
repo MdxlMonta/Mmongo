@@ -9,6 +9,7 @@
   "author": "Luigi Monta",
   "license": "ISC",
   "devDependencies": {
+    "chai": "^4.1.2",
     "mocha": "^4.0.0"
   }
 }
