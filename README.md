@@ -1,8 +1,8 @@
-##Mmongo
+## Mmongo
 
 Une class Javascript/Node.js pour gérer simplement des objets dans une base de donnée MongoDB
 
-###Instanciation
+### Instanciation
 Nécessite les options : config.js
 ```javascript
 const options = {
@@ -23,7 +23,7 @@ const mongo = new Mmongo(options, options.nameCollection)
 mongo.connectDb()
 ```
 
-###Méthodes
+### Méthodes
 
 ```javascript
 - connectDb
