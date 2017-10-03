@@ -100,7 +100,7 @@ describe('Mmongo Tests', () => {
         it('Check Mongodb for pushObjectInArray', (done) => {
             let query = {_id: objType._id}
             expect(mongo.findOne(query, {}))
-                .to.eventually.have.deep.property('list.length', 2).notify(done)
+                .to.eventually.have.nested.property('list.length', 2).notify(done)
         })
     })
 
@@ -116,7 +116,7 @@ describe('Mmongo Tests', () => {
         it('Check Mongodb for pushObjectInArray', (done) => {
             let query = {_id: objType._id}
             expect(mongo.findOne(query, {}))
-                .to.eventually.have.deep.property('list[0].count', 1).notify(done)
+                .to.eventually.have.nested.property('list[0].count', 1).notify(done)
         })
     })
 
@@ -132,7 +132,7 @@ describe('Mmongo Tests', () => {
         it('Check Mongodb for setFieldInArray', (done) => {
             let query = {_id: objType._id}
             expect(mongo.findOne(query, {}))
-                .to.eventually.have.deep.property('list[0].name', 'toto').notify(done)
+                .to.eventually.have.nested.property('list[0].name', 'toto').notify(done)
         })
     })
 
@@ -152,12 +152,12 @@ describe('Mmongo Tests', () => {
         it('Check Mongodb for updateObjectInArray - Part 1', (done) => {
             let query = {_id: objType._id}
             expect(mongo.findOne(query, {}))
-                .to.eventually.have.deep.property('list[0].name', 'newname').notify(done)
+                .to.eventually.have.nested.property('list[0].name', 'newname').notify(done)
         })
         it('Check Mongodb for updateObjectInArray - Part 2', (done) => {
             let query = {_id: objType._id}
             expect(mongo.findOne(query, {}))
-                .to.eventually.have.deep.property('list[0].count', 50).notify(done)
+                .to.eventually.have.nested.property('list[0].count', 50).notify(done)
         })
     })
 
