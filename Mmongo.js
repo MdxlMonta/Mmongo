@@ -76,7 +76,6 @@ module.exports = class Mmongo {
                         reject(err)
                     } else {
                         // if (r !== null) console.log(`findOne object id = ${r._id} in db.${this.collection}`)
-                        if (r !== null) console.log(r)
                         resolve(r)
                     }
                 })
