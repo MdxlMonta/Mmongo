@@ -11,16 +11,15 @@ const chaiAsPromised = require('chai-as-promised')
 chai.use(chaiAsPromised)
 const sinon = require('sinon')
 
-const Mmongo = require('../../server/lib/Mmongo')
-const options = require('../../server/config/server.js')
-options.mongodb = 'mongodb://' + options.ip + ':27017/jam2ForTest'
+const Mmongo = require('./Mmongo')
+const options = require('./config')
 
 const objType = {
     pseudo: 'monta',
     password: 'ze45sdf4',
     list: [{id: '1', name: 'user1', count: 0}]
 }
-const mongo = new Mmongo(options, options.nameCollection1)
+const mongo = new Mmongo(options, options.nameCollection)
 // mongo.connectDb()
 
 describe('Mmongo Tests', () => {
