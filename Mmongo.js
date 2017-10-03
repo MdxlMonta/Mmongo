@@ -14,6 +14,10 @@ module.exports = class Mmongo {
         this.collection = collection
     }
 
+    closeDb () {
+        this.db.close()
+    }
+
     /* PRIVATE
     connexion a mongodb
     */

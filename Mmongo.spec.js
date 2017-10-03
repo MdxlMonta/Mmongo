@@ -20,7 +20,6 @@ const objType = {
     list: [{id: '1', name: 'user1', count: 0}]
 }
 const mongo = new Mmongo(options, options.nameCollection)
-// mongo.connectDb()
 
 describe('Mmongo Tests', () => {
     before(() => {
@@ -278,5 +277,9 @@ describe('Mmongo Tests', () => {
             expect(mongo.findOne(query, {}))
                 .to.eventually.be.equal(null).notify(done)
         })
+    })
+
+    after(() => {
+        mongo.closeDb()
     })
 })
