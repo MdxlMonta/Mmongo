@@ -11,8 +11,8 @@ const chaiAsPromised = require('chai-as-promised')
 chai.use(chaiAsPromised)
 const sinon = require('sinon')
 
-const Mmongo = require('./Mmongo')
-const options = require('./config')
+const Mmongo = require('../Mmongo')
+const options = require('../config')
 
 const objType = {
     pseudo: 'monta',

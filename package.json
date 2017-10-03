@@ -4,7 +4,7 @@
   "description": "Class Javascript pour gerer une BD MongoDb",
   "main": "Mmongo.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha Mmongo.spec.js"
+    "test": "./node_modules/.bin/mocha test/Mmongo.spec.js"
   },
   "author": "Luigi Monta",
   "license": "ISC",
