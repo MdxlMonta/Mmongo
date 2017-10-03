@@ -21,7 +21,7 @@ module.exports = class Mmongo {
         this.db.close()
     }
 
-    /* PRIVATE
+    /* PUBLIC
     connexion a mongodb
     */
     connectDb () {
