@@ -1,0 +1,11 @@
+{
+  "name": "mmongo",
+  "version": "1.0.0",
+  "description": "Class Javascript pour gerer une BD MongoDb",
+  "main": "Mmongo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Luigi Monta",
+  "license": "ISC"
+}
