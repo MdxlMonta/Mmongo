@@ -1,5 +1,5 @@
 /*
-Mmongo v 0.1
+Mmongo v 0.2
 @ MDXL
 */
 
@@ -14,6 +14,9 @@ module.exports = class Mmongo {
         this.collection = collection
     }
 
+    /* PUBLIC
+    Ferme la connection a la db
+    */
     closeDb () {
         this.db.close()
     }
